@@ -207,4 +207,54 @@ hr {
 		font-size: 18px;
 		font-weight: bold;
 		margin: 120px 0 80px 0;
-	}
+    }
+    
+    @media(max-width: 800px){
+      
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        nav.navbar .nav-links .nav-item{
+            font-size: 16px;
+            margin: 15px 25px;
+        }
+
+        div.presentation {
+            width: 100%;
+        }
+
+        div.presentation h1 {
+            font-size: 100px;
+            align-items: center;
+        }
+
+        .wrapper img {
+            display:  none;
+        }
+
+        #features h2, #about h2 {
+            font-size: 18px;
+        }
+        
+        #features p, #about p {
+            font-size: 18px;
+        }
+
+        #services h2, #product h2, #vision h2 {
+            font-size: 18px;
+        }
+        
+        #services p, #product p, #vision p {
+            font-size: 18px;
+        }
+
+        .contact-info h2{
+            font-size: 18px;
+        }
+            
+        .contact-info p {
+            font-size: 18px;
+         }
+    }
