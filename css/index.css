@@ -90,6 +90,7 @@ nav.navbar .nav-links .nav-item:hover {
 	color: #000000;
 }
 
+
 h2 {
 	color: #052869;
 }
@@ -213,20 +214,32 @@ hr {
       
         .container {
             max-width: 800px;
-            margin: 0 auto;
-        }
+            margin: 30px auto;
+		}
+		
+		nav.navbar{
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: center;
+			margin: 20px 0;
+		}
+
+		nav.navbar .logo {
+			margin: 20px 0;
+		}
 
         nav.navbar .nav-links .nav-item{
             font-size: 16px;
-            margin: 15px 25px;
+            margin: 20px 15px;
         }
 
         div.presentation {
             width: 100%;
-        }
+		}
+		
 
         div.presentation h1 {
-            font-size: 100px;
+            font-size: 90px;
             align-items: center;
         }
 
@@ -235,26 +248,32 @@ hr {
         }
 
         #features h2, #about h2 {
-            font-size: 18px;
+            font-size: 16px;
         }
         
         #features p, #about p {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         #services h2, #product h2, #vision h2 {
-            font-size: 18px;
+            font-size: 16px;
         }
         
         #services p, #product p, #vision p {
-            font-size: 18px;
+            font-size: 16px;
         }
 
         .contact-info h2{
-            font-size: 18px;
+            font-size: 16px;
         }
             
         .contact-info p {
-            font-size: 18px;
-         }
+            font-size: 16px;
+		 }
+		 
+		 section.contact-info p.copyright {
+			
+			font-size: 16px;
+			
+		}
     }
