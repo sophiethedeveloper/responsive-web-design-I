@@ -229,7 +229,7 @@ hr {
 		}
 
         nav.navbar .nav-links .nav-item{
-            font-size: 16px;
+            font-size: 18px;
             margin: 20px 15px;
         }
 
@@ -272,8 +272,70 @@ hr {
 		 }
 		 
 		 section.contact-info p.copyright {
-			
 			font-size: 16px;
-			
 		}
-    }
+	}
+	
+	@media(max-width: 500px){
+
+		.container {
+            max-width: 800px;
+            margin: 20px auto;
+		} 
+
+		div.presentation h1 {
+            font-size: 80px;
+            align-items: center;
+		}
+		
+		
+		button {
+			height: 35px;
+			width: 180px;
+			font-size: 18px;
+		}
+
+		nav.navbar .nav-links{
+			display: flex;
+			flex-direction: column;
+			margin: 0 10px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		nav.navbar .logo {
+			padding: 5px 60px;
+			border-bottom: 2px solid #C0C0C0;
+			width: 100%;
+		}
+
+		nav.navbar .nav-links .nav-item {
+			padding: 5px 100px;
+			border-bottom: 2px solid #C0C0C0;
+			width: 100%;
+		}
+
+		main.info {
+			display: flex;
+			flex-direction: column;
+		} 
+
+		#features, #about {
+			width: 100%;
+			margin: 20px 5px;;
+		}
+		
+		main.more-info {
+			flex-direction: column;
+		}
+		
+		#services, #product, #vision {
+			width: 100%;
+			margin: 20px 10px 20px 0;
+		}
+
+		
+		div.main-image img.middle-img {
+			margin: 20px 0;
+		}
+	}
