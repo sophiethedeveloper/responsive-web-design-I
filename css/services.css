@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 80%;
+	margin: 50px auto;
+}
+
+/* Navbar Style */
+
+nav.navbar {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+
+nav.navbar .nav-links .nav-item{
+	margin: 10px 30px;
+	text-decoration: none;
+	color: #C0C0C0;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+nav.navbar .nav-links .nav-item:hover {
+	color: #000000;
+}
+
+div.main-picture img.services-header-img{
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+}
+
+/* nav.navbar img.logo {
+	margin: 0 0 0 142px;
+	/* width: 20%; */ 
+	
+div.presentation{
+    margin-bottom: 40px;
+}
+div.presentation h1{
+    font-size: 35px;
+}
+
+div.presentation p{
+    font-size: 20px;
+}
+
+hr {
+	height: 3px;
+	background-color: #000000;
+}
+
+
+section.main-information h2, section.main-information p {
+    font-size: 20px;
+}
+
+.digital-design, .digital-marketing, .ux-ui, .web-development, .ios-development, .android-development {
+    border: 1px solid #000000;
+	/* padding: 2%; */
+	height: 250px;
+	width: 510px;
+	margin: 40px 0 20px 0;
+	padding: 18px;
+}
+
+section.main-information button {
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin: 18px 0 15px 0;
+}
+
+section.main-information button:hover {
+	background: #000000;
+	color: #ffffff;
+}
+
+
+div.services {
+    display: flex;
+	flex-flow: row wrap;
+	/* width: 50%; */
+	justify-content: space-between;
+}
+
+/* Section: "More-Info" */
+
+section.more-info {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0 70px 0;
+}
+
+section.more-info div.facts {
+	width: 500px;
+}
+
+section.more-info div.facts h2, section.more-info div.facts p {
+	font-size: 20px;
+	line-height: 1.5rem;
+}
+
+section.more-info div.facts ol {
+	list-style: square;
+	font-size: 20px;
+	margin: 20px;
+	line-height: 2rem;
+}
+
+section.more-info img.services-info-img {
+	width: 510px;
+}
+
+footer p.copyright {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 120px 0 80px 0;
+}
+
+@media(max-width: 800px){
+      
+	.container {
+		max-width: 800px;
+		margin: 30px auto;
+	}
+	
+	nav.navbar{
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: center;
+		margin: 20px 0;
+	}
+
+	nav.navbar .logo {
+		margin: 20px 0;
+	}
+
+	nav.navbar .nav-links .nav-item{
+		font-size: 18px;
+		margin: 20px 15px;
+	}
+
+	div.presentation{
+		width: 100%;
+	}
+	div.presentation h1{
+		font-size: 20px;
+	}
+	
+	div.presentation p{
+		font-size: 18px;
+	}
+
+	div.services {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.ux-ui, .digital-marketing, .digital-design {
+		display: none;
+	}
+
+	section.more-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	section.more-info img.services-info-img {
+		margin: 20px 0;
+	}
+}
